@@ -197,6 +197,7 @@ namespace Pizza
 
         float CalculateTotalPrice()
         {
+
             return GetSelectedSizePrice() + CalculateToppingsPrice() + GetSelectedCrutPrice();
         }
 

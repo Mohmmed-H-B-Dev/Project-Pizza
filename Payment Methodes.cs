@@ -15,6 +15,7 @@ namespace Project_Pizza
         public Payment_Methodes()
         {
             InitializeComponent();
+            lblAmount.Text=price.ToString();
         }
         double PriceTemp = 0.0;
         bool Copy = false;
@@ -107,7 +108,6 @@ namespace Project_Pizza
             invioces frm = new invioces();
 
             frm.lbPriceItem.Text=price.ToString(); ;
-
             frm.lbNameItem.Text=NItem;
             frm.lbNumberCasher.Text=1.ToString();
 
@@ -148,7 +148,7 @@ namespace Project_Pizza
             }
             else
             {
-                lbISNOtEqual.Text=(price -CheckContentPayMethods() ).ToString();
+                d.Text=(price -CheckContentPayMethods() ).ToString();
             }
            
         }
@@ -162,8 +162,9 @@ namespace Project_Pizza
 
         private void KeyUp(object sender, KeyEventArgs e)
         {
-            lbISNOtEqual.Text=(price -CheckContentPayMethods()).ToString();
-            if (lbISNOtEqual.Text!="0")
+            lblAmount.Text=price.ToString();
+            d.Text=(price -CheckContentPayMethods()).ToString();
+            if (d.Text!="0")
             {
                 btnOk.Enabled=false;
             }
@@ -291,20 +292,20 @@ namespace Project_Pizza
         enum enClearTextBoxOptional{ txbMade , txbvisa,txbMasterCared, txbOurClinet, txbPointsRajehy , txbOurGefites , txbCash };
         private void ResetAllTag(enClearTextBoxOptional en1)
         {
-            if(enClearTextBoxOptional.txbMade!=en1)
+            if(enClearTextBoxOptional.txbMade!=en1&&txbMade.Text!=price.ToString())
                 txbMade.Tag="";
-            if (enClearTextBoxOptional .txbOurClinet!=en1)
+            if (enClearTextBoxOptional .txbOurClinet!=en1&&txbOurClinet.Text!=price.ToString())
                 txbOurClinet.Tag=""; 
 
-            if (enClearTextBoxOptional.txbMasterCared!=en1)
+            if (enClearTextBoxOptional.txbMasterCared != en1 && txbMasterCared.Text != price.ToString())
                 txbMasterCared.Tag="";
-            if (enClearTextBoxOptional.txbvisa!=en1)
+            if (enClearTextBoxOptional.txbvisa!=en1&&txbvisa.Text!=price.ToString())
                 txbvisa.Tag="";
-            if (enClearTextBoxOptional.txbPointsRajehy!=en1)
+            if (enClearTextBoxOptional.txbPointsRajehy!=en1&&txbPointsRajehy.Text!=price.ToString())
                 txbPointsRajehy.Tag="";
-            if (enClearTextBoxOptional.txbOurGefites!=en1)
+            if (enClearTextBoxOptional.txbOurGefites!=en1&&txbOurGefites.Text!=price.ToString() )
                 txbOurGefites.Tag="";
-            if (enClearTextBoxOptional.txbCash!=en1)
+            if (enClearTextBoxOptional.txbCash!=en1&&txbCash.Text!=price.ToString())
                 txbCash.Tag="";
 
         }

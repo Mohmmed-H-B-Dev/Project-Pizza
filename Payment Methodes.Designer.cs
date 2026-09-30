@@ -52,8 +52,11 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.txbCash = new System.Windows.Forms.TextBox();
             this.text7 = new System.Windows.Forms.TextBox();
-            this.lbISNOtEqual = new System.Windows.Forms.Label();
+            this.d = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblAmount = new System.Windows.Forms.Label();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -319,15 +322,15 @@
             this.text7.Text = "كاش";
             this.text7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // lbISNOtEqual
+            // d
             // 
-            this.lbISNOtEqual.AutoSize = true;
-            this.lbISNOtEqual.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbISNOtEqual.Location = new System.Drawing.Point(204, 210);
-            this.lbISNOtEqual.Name = "lbISNOtEqual";
-            this.lbISNOtEqual.Size = new System.Drawing.Size(14, 19);
-            this.lbISNOtEqual.TabIndex = 15;
-            this.lbISNOtEqual.Text = " ";
+            this.d.AutoSize = true;
+            this.d.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d.Location = new System.Drawing.Point(280, 224);
+            this.d.Name = "d";
+            this.d.Size = new System.Drawing.Size(14, 19);
+            this.d.TabIndex = 15;
+            this.d.Text = " ";
             // 
             // textBox3
             // 
@@ -341,6 +344,36 @@
             this.textBox3.Text = "ماستر كارد";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(140, 271);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(111, 19);
+            this.label1.TabIndex = 17;
+            this.label1.Text = " All Amount:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(140, 224);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 19);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Remaining:";
+            // 
+            // lblAmount
+            // 
+            this.lblAmount.AutoSize = true;
+            this.lblAmount.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAmount.Location = new System.Drawing.Point(280, 271);
+            this.lblAmount.Name = "lblAmount";
+            this.lblAmount.Size = new System.Drawing.Size(14, 19);
+            this.lblAmount.TabIndex = 19;
+            this.lblAmount.Text = " ";
+            // 
             // Payment_Methodes
             // 
             this.AcceptButton = this.btnOk;
@@ -348,8 +381,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(503, 299);
+            this.Controls.Add(this.lblAmount);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.lbISNOtEqual);
+            this.Controls.Add(this.d);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.txbOurGefites);
             this.Controls.Add(this.txbPointsRajehy);
@@ -391,7 +427,7 @@
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.TextBox txbCash;
         private System.Windows.Forms.TextBox text7;
-        private System.Windows.Forms.Label lbISNOtEqual;
+        private System.Windows.Forms.Label d;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
@@ -401,5 +437,8 @@
         private System.Windows.Forms.ToolStripMenuItem saveASToolStripMenuItem;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblAmount;
     }
 }
