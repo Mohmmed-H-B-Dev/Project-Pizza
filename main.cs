@@ -4,10 +4,10 @@ using System.Windows.Forms;
 
 namespace Pizza
 {
-    public partial class Form1 : Form
+    public partial class main : Form
     {
         LoginScreen NewLogin = new LoginScreen();
-        public Form1()
+        public main()
         {
             InitializeComponent();
         }

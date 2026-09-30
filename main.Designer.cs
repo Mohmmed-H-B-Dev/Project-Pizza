@@ -1,6 +1,6 @@
 ﻿namespace Pizza
 {
-    partial class Form1
+    partial class main
     {
         /// <summary>
         /// Required designer variable.
@@ -61,7 +61,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.nudPlusPizza = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnOpenInvoices = new System.Windows.Forms.Button();
             this.gbSize.SuspendLayout();
             this.gbToppings.SuspendLayout();
             this.gbCrustType.SuspendLayout();
@@ -483,24 +482,13 @@
             this.label3.TabIndex = 11;
             this.label3.Text = "Plus Pizza";
             // 
-            // btnOpenInvoices
-            // 
-            this.btnOpenInvoices.Location = new System.Drawing.Point(1044, 39);
-            this.btnOpenInvoices.Name = "btnOpenInvoices";
-            this.btnOpenInvoices.Size = new System.Drawing.Size(107, 42);
-            this.btnOpenInvoices.TabIndex = 12;
-            this.btnOpenInvoices.Text = "invoices";
-            this.btnOpenInvoices.UseVisualStyleBackColor = true;
-            this.btnOpenInvoices.Click += new System.EventHandler(this.btnOpenInvoices_Click);
-            // 
-            // Form1
+            // main
             // 
             this.AcceptButton = this.btnOrderPizza;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnResetForm;
             this.ClientSize = new System.Drawing.Size(1161, 522);
-            this.Controls.Add(this.btnOpenInvoices);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.nudPlusPizza);
             this.Controls.Add(this.label2);
@@ -513,7 +501,7 @@
             this.Controls.Add(this.gbSize);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form1";
+            this.Name = "main";
             this.Text = "Pizza Order";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gbSize.ResumeLayout(false);
@@ -567,7 +555,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown nudPlusPizza;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnOpenInvoices;
     }
 }
 
